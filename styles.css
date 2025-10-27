@@ -1,11 +1,11 @@
-/* ---------- RESET ---------- */
+/*  RESET  */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ---------- BODY ---------- */
+/*  BODY  */
 body {
   background: linear-gradient(135deg, #0a0a0a, #141414);
   display: flex;
@@ -15,7 +15,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* ---------- PROFILE CARD ---------- */
+/*  PROFILE CARD  */
 .profile-card {
   background-color: hsl(0, 0%, 12%);
   border-radius: 12px;
@@ -33,7 +33,7 @@ body {
   box-shadow: 0 10px 25px rgba(117, 255, 160, 0.15);
 }
 
-/* ---------- IMAGE ---------- */
+/*  IMAGE  */
 .image img {
   width: 90px;
   height: 90px;
@@ -47,7 +47,7 @@ body {
   transform: scale(1.05);
 }
 
-/* ---------- HEADING ---------- */
+/*  HEADING  */
 .heading {
   margin-top: 15px;
   padding: 0 20px;
@@ -73,7 +73,7 @@ body {
   padding: 0 10px;
 }
 
-/* ---------- BUTTONS ---------- */
+/*  BUTTONS  */
 .buttons {
   display: flex;
   flex-direction: column;
@@ -101,7 +101,7 @@ button:hover {
   transform: scale(1.03);
 }
 
-/* ---------- RESPONSIVENESS ---------- */
+/*  RESPONSIVENESS  */
 @media (max-width: 700px) {
   .profile-card {
     width: 80%;
@@ -136,4 +136,4 @@ button:hover {
     font-size: 0.9rem;
   }
 }
-/* ---------- END OF STYLES ---------- */
+/*  END OF STYLES  */
