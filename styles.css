@@ -1,99 +1,143 @@
-*{
-    margin:0%;
-    padding:0%;
-    box-sizing:border-box;
-}   
-
-body{
-    background-color:hsl(0, 0%, 8%);
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    height:100vh;
-}
-nav{
-    border:2px solid hsl(0, 0%, 12%);
-    border-radius:10px;
-    background-color: hsl(0, 0%, 12%);
-    width:35vw ;
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.image{
-    text-align:center;
+/* ---------- BODY ---------- */
+body {
+  background: linear-gradient(135deg, #0a0a0a, #141414);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
 
-.image img{
-    border:1px solid hsl(0, 0%, 12%);
-    border-radius:50%;
-    padding:20px 0px 5px 0px;
+/* ---------- CARD ---------- */
+.profile-card {
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 12px;
+  width: 320px;
+  max-width: 90%;
+  text-align: center;
+  padding: 25px 0 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.heading{
-    margin:10px 0px;
-    text-align:center;
+/* Subtle hover lift */
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(117, 255, 160, 0.15);
 }
 
-h1{
-    color:hsl(0, 0%, 100%);
+/* ---------- IMAGE ---------- */
+.image img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid hsl(75, 94%, 57%);
+  padding: 3px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-h2{
-    color:hsl(75, 94%, 57%);
-    padding:5px 0px 10px 0px;
+.image img:hover {
+  transform: scale(1.05);
 }
 
-p{
-    color:hsl(0, 0%, 100%);
+/* ---------- HEADING ---------- */
+.heading {
+  margin-top: 15px;
+  padding: 0 20px;
 }
 
-.buttons{
-    margin-bottom:20px;
-    text-align:center;
+.heading h1 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
 }
 
-button{
-    width:350px;
-    background-color:hsl(0, 0%, 20%);
-    padding:10px 0px;
-    color:hsl(0, 0%, 100%);
-    margin:10px 0px;
-    border:1px solid hsl(0, 0%, 20%);
-    border-radius:5px;
-}
-  
-button:hover{
-    background-color:hsl(75, 94%, 57%);
-    transition:background-color 0.5s linear;
+.heading h2 {
+  color: hsl(75, 94%, 57%);
+  font-size: 1rem;
+  margin-bottom: 10px;
 }
 
-/* media query of 1237px */
-@media(max-width:1237px){
-nav{
-    width:45vw; 
-}
-}
-
-/* media query of 970px */
-@media(max-width:970px){
-nav{
-    width:55vw; 
-}
+.heading p {
+  color: #cfcfcf;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding: 0 10px;
 }
 
-/* media query of 700px */
-@media(max-width:700px){
-nav{
-    width:70vw; 
-}
-}
-
-/* media query of 580px */
-@media(max-width:580px){
-nav{
-    width:90vw; 
+/* ---------- BUTTONS ---------- */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
 }
 
-button{
-    width:320px;
+button {
+  width: 80%;
+  background: hsl(0, 0%, 18%);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 8px 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
+
+button:hover {
+  background: hsl(75, 94%, 57%);
+  color: #0a0a0a;
+  transform: scale(1.03);
+}
+
+/* ---------- REMOVE CARD GLOW EFFECT ---------- */
+.profile-card::before {
+  display: none;
+}
+
+/* ---------- RESPONSIVENESS ---------- */
+@media (max-width: 700px) {
+  .profile-card {
+    width: 80%;
+    padding: 20px 0 25px;
+  }
+
+  button {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    width: 95%;
+    border-radius: 10px;
+  }
+
+  .heading h1 {
+    font-size: 1.2rem;
+  }
+
+  .heading h2 {
+    font-size: 0.9rem;
+  }
+
+  .heading p {
+    font-size: 0.85rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
 }
