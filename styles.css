@@ -15,7 +15,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* ---------- CARD ---------- */
+/* ---------- PROFILE CARD ---------- */
 .profile-card {
   background-color: hsl(0, 0%, 12%);
   border-radius: 12px;
@@ -27,7 +27,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Subtle hover lift */
+/* Subtle hover lift effect */
 .profile-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(117, 255, 160, 0.15);
@@ -88,7 +88,7 @@ button {
   border: none;
   border-radius: 6px;
   color: white;
-  padding: 8px 0;
+  padding: 10px 0;
   font-size: 0.95rem;
   letter-spacing: 0.4px;
   cursor: pointer;
@@ -99,11 +99,6 @@ button:hover {
   background: hsl(75, 94%, 57%);
   color: #0a0a0a;
   transform: scale(1.03);
-}
-
-/* ---------- REMOVE CARD GLOW EFFECT ---------- */
-.profile-card::before {
-  display: none;
 }
 
 /* ---------- RESPONSIVENESS ---------- */
@@ -141,3 +136,4 @@ button:hover {
     font-size: 0.9rem;
   }
 }
+/* ---------- END OF STYLES ---------- */
